@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactical Pro's</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/about.css">
+
+
+</head>
+<body>
+    <header>
+    
+        <nav class="navbar navbar-expand-md fixed-top">
+            <!-- Brand -->
+           
+            <a class="navbar-brand" href="/checkout">Cart(<% if(session.cart) { %>
+                <%= session.cart.totalQty %> 
+                <% } %>
+                )</a>
+            
+    
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon">TP</span>
+            </button>
+    
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div id="hero-text" class="text-center">
+            <h1> About Tactical Pro's</h1>
+            <br>
+            
+            
+    
+    
+        </div>
+    
+    
+    </header>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="words" class="col-sm-12 text-center">
+                <div>
+                    <h4>Welcome to Tactical Pro's - your one stop shop for the best in gun and ammo technology! Founded in 1991 through some
+                     we strive to provide the best customer service and all the latest in firearm technology!</h4>
+                </div>
+
+                <div>
+                    <h2> Our Mission:</h2>
+                    <p>We look to provide our customers with the safe and secure access of firearms. To allow everyone to excercise ther 2nd amendment rights.
+                    
+                    We also have a company wide shootout Friday celebration, to keep or own shooting skills polished and secure.</p>
+                </div>
+
+                <div>
+                    <h2>Our Values:</h2>
+                    <p>Obviously we value our customers as well as our veterans. We beleive this country is great because of the people that fight for its freedom everyday. 
+                    
+                    Our merchandise is genuine and of the highest quality and we are a proud american made company.</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+    
+    
+    
+    
+                <h3 id="footer-title" class="text-center">Thank you for your support!</h3>
+                <ul id="footer-list">
+                    <li><a class="link-1" href="/">Home</a></li>
+                    <li><a class="link-1" href="/about">About</a></li>
+                    <li><a class="link-1" href="/products">Products</a></li>
+                    <li><a class="link-1" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+    
+    
+    
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </footer>
+    
+    
+    
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,180 @@
+html,
+body {
+
+	
+	
+	font-family: 'Lato', 'Arial', 'sans-serif';
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/wind.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+    
+	background-attachment: fixed;
+}
+
+
+
+li{
+    list-style:none;
+}
+.navbar-brand{
+    color:white;
+}
+
+
+.navbar-brand:hover,
+.navbar-brand:active{
+    color: firebrick;
+}
+
+
+.navbar {
+    background-color:black;
+}
+
+.navbar-toggler-icon{
+    background-color:firebrick;
+    padding-top:7px ;
+}
+
+
+.navbar-nav li a {
+    margin:0 20px;
+    
+}
+
+
+.nav-link{
+    color:white
+}
+
+.nav-link:hover,
+.nav-link:active{
+    color:firebrick;
+}
+
+
+
+#hero-text{
+    padding-top:150px;
+    color:white;
+}
+
+
+
+#b1{
+    font-size:25px;
+    background: transparent;
+    color:white;
+    border:1px solid white;
+    border-radius: 7px;
+    padding:7px 7px;
+}
+
+#b1:hover,
+#b1:active{
+    color:firebrick;
+    border: 1px solid firebrick;
+}
+
+
+
+
+
+
+
+#map-img{
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+#town{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+
+#email-button{
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius:5px;
+    color:white;
+    background-color: black;
+}
+
+#email-button:hover,
+#email-button:active{
+    color:firebrick;
+    transform: scale(1.1)
+
+}
+
+
+form{
+    margin-bottom:50px;
+}
+
+
+
+footer{
+    color:white;
+    background-color:black;
+    
+}
+
+#footer-list{
+    display: inline-block;
+    margin-bottom: 80px;
+    
+}
+
+
+#footer-list li{
+    display: inline-block;
+    padding:30px 30px;
+}
+
+.link-1{
+    color: white;
+}
+
+.link-1:hover,
+.link-1:active{
+    color: firebrick;
+}
+
+ion-icon:hover,
+ion-icon:active{
+    color: firebrick;
+    cursor: pointer;
+
+}
+
+
+
+
+
+#footer-title{
+    padding-top: 40px;
+    font-size:25px;
+}
+
+
+ion-icon{
+    font-size:30px;
+}
+
+
+
+
+

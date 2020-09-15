@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactical Pro's</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/checkout.css">
+
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-md fixed-top">
+            <!-- Brand -->
+
+            <a class="navbar-brand" href="/checkout">Cart(<% if(session.cart) { %>
+                <%= session.cart.totalQty %>
+                <% } %>
+                )</a>
+
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon">TP</span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="hero-text" class="text-center">
+            <h1>Tactical Pro's</h1>
+            <br>
+            <h2>Checkout</h2>
+
+
+
+
+        </div>
+
+
+    </header>
+
+    <div class="container-fluid text-center" id="checkout-section">
+    <% if (products) {%>
+        <div class="row text-center">
+            <div id="" class="col-sm-12 text-center">
+                <ul class="list-group">
+                    <% products.forEach(function(item){  %>
+                    <li class="list-group-items">
+                        <span class="badge">Qty: <%= item.qty %></span>
+                        <strong>Description: <%= item.item.model %></strong>
+                        <br>
+                        <span class="label label-success">total: $<%= item.price %></span>
+                        <div class="btn-group">
+                            <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">menu<span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/reduce/<%= item.item._id %>">Reduce by 1</a></li>
+                                <li><a href="/remove/<%= item.item._id %>">Remove All</a></li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <% }); %>
+                </ul>
+                
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div id="" class="col-sm-12">
+
+                
+                    <strong>Total: $ <%= totalPrice %> </strong>
+        
+        
+            </div>
+        </div>
+        <div class="row">
+            <div id="" class="col-sm-12">
+        
+        
+                <button id="c-button" type="button" class="btn btn-success">Checkout</button>
+        
+        
+            </div>
+        </div>
+
+        <% }else{ %>
+        <div class="row text-center">
+            <div id="" class="col-sm-12 text-center">
+        
+        
+                <h2 id="zero-cart">No items in cart!</h2>
+        
+        
+            </div>
+        </div>
+
+        <% } %>
+
+
+    </div>
+
+    <footer class="">
+        <h3 id="footer-title" class="text-center">Thank you for your support!</h3>
+        <ul id="footer-list">
+            <li><a class="link-1" href="/">Home</a></li>
+            <li><a class="link-1" href="/about">About</a></li>
+            <li><a class="link-1" href="/products">Products</a></li>
+            <li><a class="link-1" href="/contact">Contact</a></li>
+        </ul>
+        <ul id="footer-social">
+            <li><a>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            <li><a>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li><a>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+        </ul>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

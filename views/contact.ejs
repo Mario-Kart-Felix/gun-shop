@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactical Pro's</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/contact.css">
+
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-md fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="/checkout">Cart(<% if(session.cart) { %>
+                <%= session.cart.totalQty %>
+                <% } %>
+                )</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon">TP</span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="hero-text" class="text-center">
+            <h1>Tactical Pro's</h1>
+
+            <br>
+            <h2>Contact Us</h2>
+
+
+
+        </div>
+
+
+    </header>
+
+
+    
+    <div class="container-fluid">
+       
+        <div class="row">
+
+            <div class=" col-sm-12 text-center">
+                <img id="map-img" src="images/ohyeah.png">
+
+                
+
+            </div>
+
+            <div class="col-sm-12 text-center">
+                <h3 id="town">Glendora,CA</h3>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h3>Send us an email</h3>
+                <form>
+                    <label for="">First Name</label></br>
+                    <input>
+                    </br>
+                    <label for="">Last Name</label></br>
+                    <input>
+                    </br>
+                    <label for="">Email</label></br>
+                    <input>
+                    </br>
+                    <label for="">Message</label></br>
+                    <textarea></textarea>
+                    </br>
+                    <button id="email-button">Send</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+    
+    
+    
+    
+                <h3 id="footer-title" class="text-center">Thank you for your support!</h3>
+                <ul id="footer-list">
+                    <li><a class="link-1" href="/">Home</a></li>
+                    <li><a class="link-1" href="/about">About</a></li>
+                    <li><a class="link-1" href="/products">Products</a></li>
+                    <li><a class="link-1" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+    
+    
+    
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

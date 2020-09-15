@@ -1,0 +1,170 @@
+html,
+body {
+
+	
+	
+	font-family: 'Lato', 'Arial', 'sans-serif';
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/merica-money.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+    
+	background-attachment: fixed;
+}
+
+
+
+li{
+    list-style:none;
+}
+.navbar-brand{
+    color:white;
+}
+
+
+.navbar-brand:hover,
+.navbar-brand:active{
+    color: firebrick;
+}
+
+
+.navbar {
+    background-color:black;
+}
+
+
+.navbar-toggler-icon{
+    background-color:firebrick;
+    padding-top:7px ;
+}
+
+.navbar-nav li a {
+    margin:0 20px;
+    
+}
+
+
+.nav-link{
+    color:white
+}
+
+.nav-link:hover,
+.nav-link:active{
+    color:firebrick;
+}
+
+
+
+#hero-text{
+    padding-top:150px;
+    color:white;
+}
+
+
+
+#b1{
+    font-size:25px;
+    background: transparent;
+    color:white;
+    border:1px solid white;
+    border-radius: 7px;
+    padding:7px 7px;
+}
+
+#b1:hover,
+#b1:active{
+    color:firebrick;
+    border: 1px solid firebrick;
+}
+
+
+
+
+.link-1{
+    color:white;
+}
+
+.link-1:hover,
+.link-1:active{
+    color: firebrick;
+}
+
+
+
+#checkout-section{
+    padding: 130px 30px;
+}
+
+
+#zero-cart{
+    padding-left: ;
+}
+
+.list-group-items{
+    margin: 20px 10px;
+    padding: 20px 20px;
+    border: 3px solid firebrick;
+}
+
+
+#c-button{
+    margin-top:30px;
+}
+
+footer{
+    color:white;
+    background-color:black;
+    
+}
+
+#footer-list{
+    display: inline-block;
+    margin-bottom: 80px;
+    
+}
+
+
+#footer-list li{
+    display: inline-block;
+    padding:15px 15px;
+}
+
+#footer-social{
+    display: inline-block;
+    float: right;
+    margin-right:30px;
+}
+
+#footer-social li{
+    display: inline-block;
+    padding:15px 15px;
+}
+
+#footer-title{
+    padding-top: 40px;
+    font-size:25px;
+}
+
+
+ion-icon{
+    font-size:30px;
+
+}
+
+ion-icon:hover,
+ion-icon:active{
+    color: firebrick;
+    cursor: pointer;
+}
+
+
+
+
